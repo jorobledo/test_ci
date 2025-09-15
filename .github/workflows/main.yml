@@ -6,12 +6,12 @@ jobs:
     steps:
       - run: echo hello world
 
-  build_skim:
+  mcstas:
     runs-on: ubuntu-latest
-    container: rootproject/root:6.26.10-conda
+    container: mccode/mcstas-3.4
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
 
-      - name: run python
-        run: python --version
+      - name: run mcstas
+        run: mcstas
