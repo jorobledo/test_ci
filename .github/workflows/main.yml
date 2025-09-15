@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     container: mccode/mcstas-3.4
     steps:
-      - name: checkout repository
-        uses: actions/checkout@v4
+      # - name: checkout repository
+        # uses: actions/checkout@v4
 
       - name: run mcstas
         run: mcstas
